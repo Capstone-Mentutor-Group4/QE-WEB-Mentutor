@@ -8,6 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
+
 public class LoginPage {
     public static WebDriver driver;
     public LoginPage(WebDriver driver){
@@ -15,6 +16,7 @@ public class LoginPage {
         this.driver = driver ;
     }
 
+//    public static String pathFile = System.getProperty("user.dir") + /src
     @FindBy(xpath = "//input[@id='input-email']")
     private WebElement fieldEmail;
 
@@ -45,6 +47,12 @@ public class LoginPage {
     private WebElement noPasswordText;
     @FindBy(xpath = "//p[.='Email is required']")
     private WebElement noEmailText;
+    @FindBy(xpath = "//h3[.='Logout']")
+    private WebElement logouBtn;
+    @FindBy(xpath = "//h2[@class='swal2-title']")
+    private WebElement popUpLogout;
+    @FindBy(xpath = "//button[@class='swal2-confirm swal2-styled swal2-default-outline']")
+    private WebElement yesBtnLogout;
 
 // STEP DEF
     public void setFieldEmail(String email){
@@ -59,6 +67,17 @@ public class LoginPage {
         loginbtn.click();
     }
 
+    public void setLogouBtn() {
+        logouBtn.click();
+    }
+    public boolean setpopUpLogout(){
+        return popUpLogout.isDisplayed();
+    }
+
+    public void setYesBtnLogout() {
+        yesBtnLogout.click();
+    }
+
     public boolean setPopUpSuccess() {
         return popUpSuccess.isDisplayed();
     }
@@ -71,6 +90,8 @@ public class LoginPage {
     public boolean verifyLoginPage(){
         return fieldEmail.isDisplayed();
     }
+
+  
     //Verify Function
     public boolean verifyHomeAdmin(){
         return homeAdmin.isDisplayed();
@@ -82,6 +103,7 @@ public class LoginPage {
     public boolean setPopUpFailed() {
         return popUpFailed.isDisplayed();
     }
+
     public boolean verifyNoEmailText() {
         WebDriverWait wait = new WebDriverWait(driver,10);
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[.='Email is required']")));
@@ -92,4 +114,5 @@ public class LoginPage {
         wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//p[.='Password is required']")));
         return noPasswordText.isDisplayed();
     }
+
 }

@@ -8,6 +8,9 @@ Feature:Login Mentutor
     And User click button login
     Then User got the pop up message login successful
     And User will direct to homeadmin page
+    When User click logout button
+    Then User will logout from Mentutor
+    And User direct to Login Page
     Examples:
       | email                     | password  |
       | admin1.mentutor@gmail.com | Admin123$ |
@@ -24,7 +27,17 @@ Feature:Login Mentutor
       | khairul123@gmail.com | Khairul123$ |
 
   @Login @Positive-Case #LOGIN-MENTEE #WEB-LG_003
-  Scenario Outline: Login Mentee with valid data
+  Scenario Outline: Login Admin with invalid data
+    Given User already on Login Page Mentutor
+    When User input email "<email>" and password "<password>"
+    And User click button login
+    Then User got the pop up message invalid email or password
+    Examples:
+      | email                    | password |
+      | JajangNurjaman@gmail.com | Jajang123$    |
+
+  @login
+  Scenario Outline: Login Mentor with valid data
     Given User already on Login Page Mentutor
     When User input email "<email>" and password "<password>"
     And User click button login
@@ -35,7 +48,7 @@ Feature:Login Mentutor
       | mayanda123$@gmail.com | Mayanda123$ |
 
   @Login @Negative-Case #LOGIN-UNREGISTER #WEB-LG_004
-  Scenario Outline: Login User invalid data
+  Scenario Outline: Login Mentor invalid data
     Given User already on Login Page Mentutor
     When User input email "<email>" and password "<password>"
     And User click button login
@@ -63,3 +76,27 @@ Feature:Login Mentutor
     Examples:
       | email | password    |
       |       | Khairul123$ |
+
+    @login
+  Scenario Outline: Login Mentee with valid data
+    Given User already on Login Page Mentutor
+    When User input email "<email>" and password "<password>"
+    And User click button login
+    Then User got the pop up message login successful
+    And User will direct to homementee page
+    When User click logout button
+    Then User will logout from Mentutor
+    And User direct to Login Page
+    Examples:
+      | email               | password   |
+      | fahrul123@gmail.com | Fahrul123$ |
+
+  @login
+  Scenario Outline: Login Mentee invalid data
+    Given User already on Login Page Mentutor
+    When User input email "<email>" and password "<password>"
+    And User click button login
+    Then User got the pop up message invalid email or password
+    Examples:
+      | email                    | password   |
+      | JajangNurjaman@gmail.com | Jajang123$ |

@@ -12,9 +12,10 @@ import step_definitions.Hooks;
 public class LoginSteps {
     public WebDriver webDriver;
 
-    public LoginSteps() {
+    public LoginSteps (){
         super();
         this.webDriver = Hooks.webDriver;
+        LoginPage loginPage = new LoginPage(webDriver);
     }
 
     @Given("User already on Login Page Mentutor")
@@ -63,6 +64,7 @@ public class LoginSteps {
     public void userWillDirectToHomementorPage() {
         LoginPage loginPage = new LoginPage(webDriver);
         Assert.assertTrue(loginPage.verifyHomeMentor());
+
     }
 
     @And("User will direct to homementee page")
@@ -81,5 +83,25 @@ public class LoginSteps {
     public void userSeeErrorNeedEmailOnLoginPage() {
         LoginPage loginPage = new LoginPage(webDriver);
         Assert.assertTrue(loginPage.verifyNoEmailText());
+    }
+
+    @When("User click logout button")
+    public void userClickLogoutButton() throws InterruptedException {
+        LoginPage loginPage = new LoginPage(webDriver);
+        Thread.sleep(1000);
+        loginPage.setLogouBtn();
+    }
+
+    @Then("User will logout from Mentutor")
+    public void userWillLogoutFromMentutor() {
+        LoginPage loginPage = new LoginPage(webDriver);
+        loginPage.setYesBtnLogout();
+    }
+
+    @And("User direct to Login Page")
+    public void userDirectToLoginPage() throws InterruptedException {
+        LoginPage loginPage = new LoginPage(webDriver);
+        Thread.sleep(3000);
+        Assert.assertTrue(loginPage.verifyLoginPage());
     }
 }
