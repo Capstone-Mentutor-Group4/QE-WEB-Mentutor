@@ -52,7 +52,6 @@ public class LoginSteps {
         Assert.assertTrue(loginPage.verifyHomeAdmin());
     }
 
-
     @Then("User got the pop up message invalid email or password")
     public void userGotThePopUpMessageInvalidEmailOrPassword() throws InterruptedException {
         LoginPage loginPage = new LoginPage(webDriver);
@@ -72,6 +71,18 @@ public class LoginSteps {
     public void userWillDirectToHomementeePage() {
         LoginPage loginPage = new LoginPage(webDriver);
         Assert.assertTrue(loginPage.verifyHomeMentee());
+    }
+
+    @Then("User see error need password on login page")
+    public void userSeeErrorOnLoginPage() {
+        LoginPage loginPage = new LoginPage(webDriver);
+        Assert.assertTrue(loginPage.verifyNoPassText());
+    }
+
+    @Then("User see error need email on login page")
+    public void userSeeErrorNeedEmailOnLoginPage() {
+        LoginPage loginPage = new LoginPage(webDriver);
+        Assert.assertTrue(loginPage.verifyNoEmailText());
     }
 
     @When("User click logout button")
