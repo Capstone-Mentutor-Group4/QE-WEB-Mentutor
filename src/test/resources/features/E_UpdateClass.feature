@@ -1,7 +1,7 @@
 Feature: Update Class Mentutor
   as an admin i want to update class
 
-  @UpdateClass
+  @TestRun @Admin @UpdateClass
   Scenario: Update Class with valid name and status
     Given Admin already login
     Then User got the pop up message login successful
@@ -15,7 +15,7 @@ Feature: Update Class Mentutor
     And Admin click submit button
     Then Admin got the pop up Success Updated
 
-  @UpdateClass
+  @TestRun @Admin @UpdateClass
   Scenario: Update Class with valid name and change status
     Given Admin already login
     Then User got the pop up message login successful
@@ -29,7 +29,7 @@ Feature: Update Class Mentutor
     And Admin click submit button
     Then Admin got the pop up Success Updated
 
-  @UpdateClass
+  @TestRun @UpdateClass
   Scenario: Update Class with invalid name and valid status
     Given Admin already login
     Then User got the pop up message login successful
@@ -43,7 +43,7 @@ Feature: Update Class Mentutor
     And Admin click submit button
     Then Admin got the pop up Failed Updated
 
-  @UpdateClass
+  @TestRun @UpdateClass
   Scenario: Update Class with invalid name and status
     Given Admin already login
     Then User got the pop up message login successful
@@ -58,7 +58,7 @@ Feature: Update Class Mentutor
     Then Admin got the pop up Failed Updated
 
 #  BUG, dapat mengupdate nama kelas jadi string kosong dengan respon success created
-  @UpdateClass
+  @TestRun @UpdateClass
   Scenario: Update Class with empty name and status
     Given Admin already login
     Then User got the pop up message login successful

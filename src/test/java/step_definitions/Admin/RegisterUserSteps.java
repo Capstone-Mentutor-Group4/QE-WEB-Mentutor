@@ -60,8 +60,9 @@ public class RegisterUserSteps {
         RegisterUserPage registerUserPage = new RegisterUserPage(webDriver);
         registerUserPage.setInputName(nama);
         registerUserPage.setInputEmail(email);
+        Thread.sleep(3000);
         registerUserPage.setInputRole(role);
-        Thread.sleep(5000);
+        Thread.sleep(10000);
         registerUserPage.setInputClass(className);
         registerUserPage.setInputPassword(password);
     }

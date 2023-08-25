@@ -8,7 +8,7 @@ Feature: Mentor can reply comment by Mentee on Forum Page.
     And Mentor click Forum Button on homementor page
     And Mentor direct to Class Forum Page
 
-  @Mentor @SubmitComment @ValidComment #WEB-MNTR_021
+  @TestRun @Mentor @SubmitComment @ValidComment #WEB-MNTR_021
   Scenario Outline: Mentor can reply comment by Mentee with valid comment
     When Mentor input comment "<comment>" on Forum Page
     Then Mentor click send comment
@@ -16,7 +16,7 @@ Feature: Mentor can reply comment by Mentee on Forum Page.
       | comment                |
       | Ada yang bisa dibantu? |
 
-  @Mentor @SubmitComment @InvalidComment #WEB-MNTR_022
+  @TestRun @Mentor @SubmitComment @InvalidComment #WEB-MNTR_022
   Scenario Outline: Mentor can reply comment by Mentee with any type data (numeric, special char.)
     When Mentor input comment "<comment>" on Forum Page
     Then Mentor click send comment

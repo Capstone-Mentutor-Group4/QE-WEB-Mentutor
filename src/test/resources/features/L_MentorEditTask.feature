@@ -8,7 +8,7 @@ Feature: Mentor can edit Task on Task Page.
     And Mentor click icon Task Button
     And Mentor direct to Taskpage
 
-  @Mentor @UpdateTask @Valid #WEB-MNTR_015 #BUG-CAN'T UPDATE WITH IMAGE/FILE DATA
+  @TestRun @Mentor @UpdateTask @Valid #WEB-MNTR_015 #BUG-CAN'T UPDATE WITH IMAGE/FILE DATA
   Scenario Outline: Mentor Update Task with valid data on Taskpage
     When Mentor click tri-dot icon button to show dropdown menu
     Then Mentor cick menu Edit
@@ -19,7 +19,7 @@ Feature: Mentor can edit Task on Task Page.
       | title      | desc               | date       |
       | CapstoneOK | Si Paling Capstone | 2023-08-25 |
 
-  @Mentor @UpdateTask @Invalid #WEB-MNTR_016 #BUG-CAN UPDATE TASK WITH INVALID DATA
+  @TestRun @Mentor @UpdateTask @Invalid #WEB-MNTR_016 #BUG-CAN UPDATE TASK WITH INVALID DATA
   Scenario Outline: Mentor Update Task with invalid data on Taskpage
     When Mentor click tri-dot icon button to show dropdown menu
     Then Mentor cick menu Edit
@@ -33,14 +33,14 @@ Feature: Mentor can edit Task on Task Page.
       | CapstoneOK | Si Paling Capstone |            |
       |            |                    |            |
 
-  @Mentor @Delete #WEB-MNTR_017 #BUG - CAN'T AUTO REFRESH TASK
+  @TestRun @Delete #WEB-MNTR_017 #BUG - CAN'T AUTO REFRESH TASK
   Scenario: Mentor want Delete Task on Taskpage
     When Mentor click tri-dot icon button to show dropdown menu
     Then Mentor click menu Delete
     And Mentor got pop up Yes Delete confirmation
     And Mentor got pop up Task Delete OK
 
-  @Mentor @Delete #WEB-MNTR_018
+  @TestRun @Delete #WEB-MNTR_018
   Scenario: Mentor cancel Delete Task on Taskpage
     When Mentor click tri-dot icon button to show dropdown menu
     Then Mentor click menu Delete

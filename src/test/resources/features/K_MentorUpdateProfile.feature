@@ -8,7 +8,7 @@ Feature: Mentors can change their data on the Mentor Profile page.
     And Mentor click Profile Button on homementor page
     And Mentor direct to My Profile Page
 
-  @Mentor @Update-Profile @Valid-Data #WEB-MNTR_23 #BUG-CAN CREATE USER WITH VALID DATA WITHOUT IMAGES
+  @TestRun @Mentor @Update-Profile @Valid-Data #WEB-MNTR_23 #BUG-CAN CREATE USER WITH VALID DATA WITHOUT IMAGES
   Scenario Outline: Mentor Update Profile with valid data on Mentor Profile page
     When Mentor click icon pencil for edit on Mentor Profile Page
     Then Mentor input update profile with valid data "<name>", "<email>", "<password>"
@@ -18,7 +18,7 @@ Feature: Mentors can change their data on the Mentor Profile page.
       | name           | email                | password    |
       | Khairul Lanang | khairul123@gmail.com | Khairul123$ |
 
-  @Mentor @Update-Profile @Invalid-Data #WEB-MNTR_24 #BUG-CAN CREATE USER WITH INCOMPLETE DATA WITHOUT IMAGES
+  @TestRun @Mentor @Update-Profile @Invalid-Data #WEB-MNTR_24 #BUG-CAN CREATE USER WITH INCOMPLETE DATA WITHOUT IMAGES
   Scenario Outline: Mentor Update Profile with invalid data on Mentor Profile page
     When Mentor click icon pencil for edit on Mentor Profile Page
     Then Mentor input update profile with valid data "<name>", "<email>", "<password>"

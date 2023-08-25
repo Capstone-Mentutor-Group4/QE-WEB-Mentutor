@@ -1,7 +1,7 @@
 Feature: Delete Class Mentutor
   as an admin i want to delete class
 
-  @DeleteClass
+  @TestRun @Delete
   Scenario: Delete Class Mentutor
     Given Admin already login
     Then User got the pop up message login successful
@@ -12,7 +12,7 @@ Feature: Delete Class Mentutor
     When Admin click Yes button Delete Class
     Then Admin got the pop Success deleted class
 
-  @DeleteClass
+  @TestRun @Delete
   Scenario: Cancel Delete Class Mentutor
     Given Admin already login
     Then User got the pop up message login successful

@@ -40,6 +40,7 @@ public class UpdateUserSteps {
         updateUserPage.setInputName(nama);
         updateUserPage.setInputEmail(email);
         updateUserPage.setInputPassword(password);
+        Thread.sleep(5000);
         updateUserPage.setDropClass(className);
     }
 

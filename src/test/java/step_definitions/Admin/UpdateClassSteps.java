@@ -19,7 +19,7 @@ public class UpdateClassSteps {
     @And("Admin click option button")
     public void adminClickOptionButton() throws InterruptedException {
          UpdateClassPage updateClassPage = new UpdateClassPage(webDriver);
-         Thread.sleep(3000);
+         Thread.sleep(10000);
          updateClassPage.setOptionBtn();
     }
 

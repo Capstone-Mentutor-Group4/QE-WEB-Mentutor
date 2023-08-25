@@ -1,7 +1,7 @@
 Feature: Update Profile Mentee
   as a Mentee i want to update profile
 
-  @UpdateMentee
+  @TestRun @Mentee @UpdateMentee
   Scenario: Update profile with valid data
     Given Mentee already login
     Then Mentee direct to homementee page
@@ -13,7 +13,7 @@ Feature: Update Profile Mentee
     Then Mentee got the pop up Success Update Profile
 
 #    Bug
-  @UpdateMentee
+  @TestRun @Mentee @UpdateMentee
   Scenario: Update profile with empty name parameter
     Given Mentee already login
     Then Mentee direct to homementee page
@@ -25,7 +25,7 @@ Feature: Update Profile Mentee
     Then Mentee got the pop up
 
 #    Bug
-  @UpdateMentee
+  @TestRun @Mentee @UpdateMentee
   Scenario: Update profile with empty email parameter
     Given Mentee already login
     Then Mentee direct to homementee page
@@ -37,7 +37,7 @@ Feature: Update Profile Mentee
     Then Mentee got the pop up
 
     #Bug
-  @UpdateMentee
+  @TestRun @Mentee @UpdateMentee
   Scenario: Update profile with empty data
     Given Mentee already login
     Then Mentee direct to homementee page

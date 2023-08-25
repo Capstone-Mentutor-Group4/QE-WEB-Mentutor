@@ -19,6 +19,8 @@ public class MentorDetailTaskPage {
     @FindBy(xpath = "//label[@class='hover:text-button px-4 text-sm text-abu cursor-pointer']")
     private WebElement inputScoreBtn;
     public void clickInputScoreBtn(){
+        WebDriverWait wait = new WebDriverWait(driver,10);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//label[@class='hover:text-button px-4 text-sm text-abu cursor-pointer']")));
         inputScoreBtn.click();
     }
 
@@ -27,6 +29,8 @@ public class MentorDetailTaskPage {
 
     public void setFieldInputScore(String score){
         fieldInputScore.clear();
+        WebDriverWait wait = new WebDriverWait(driver,10);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='input-score']")));
         fieldInputScore.sendKeys(score);
     }
 

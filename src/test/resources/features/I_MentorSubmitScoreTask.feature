@@ -8,7 +8,7 @@ Feature: Mentor can submit Score Task on Detail Task Page.
     And Mentor click see Submitted Task
     And Mentor direct to Detail Taskpage
 
-  @Mentor @SubmitScore @Valid #WEB-MNTR_019
+  @TestRun @SubmitScore @Valid #WEB-MNTR_019
   Scenario Outline: Mentor input Score Submitted Task with valid score data
     When Mentor click pencil icon button
     Then Mentor will input score "<score>" on submitted task
@@ -18,7 +18,7 @@ Feature: Mentor can submit Score Task on Detail Task Page.
       | score |
       | 95    |
 
-  @Mentor @SubmitScore @Invalid #WEB-MNTR_020
+  @TestRun @SubmitScore @Invalid #WEB-MNTR_020
   Scenario Outline: Mentor input Score Submitted Task with invalid score data
     When Mentor click pencil icon button
     Then Mentor will input score "<score>" on submitted task

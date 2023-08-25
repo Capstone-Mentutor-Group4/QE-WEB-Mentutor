@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="AUTOMATION_WEB_MENTUTOR" />
+        <module name="QE-WEB-MENTUTOR" />
       </profile>
     </annotationProcessing>
   </component>

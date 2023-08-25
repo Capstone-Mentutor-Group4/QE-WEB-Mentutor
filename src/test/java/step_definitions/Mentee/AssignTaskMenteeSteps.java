@@ -20,8 +20,8 @@ public class AssignTaskMenteeSteps {
     public void menteeAlreadyLogin() throws InterruptedException {
         LoginPage loginPage = new LoginPage(webDriver);
         Assert.assertTrue(loginPage.verifyLoginPage());
-        String email = "fahrul123@gmail.com";
-        String password = "Fahrul123$";
+        String email = "wahid1st@gmail.com";
+        String password = "Wahid123$";
         loginPage.setFieldEmail(email);
         loginPage.setFieldPassword(password);
         loginPage.clickBtnLogin();

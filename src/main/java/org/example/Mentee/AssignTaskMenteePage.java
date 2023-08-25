@@ -1,9 +1,12 @@
 package org.example.Mentee;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class AssignTaskMenteePage {
     public static WebDriver driver;
@@ -39,6 +42,8 @@ public class AssignTaskMenteePage {
 
 
     public void setTaskBtn() {
+        WebDriverWait wait = new WebDriverWait(driver,10);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h3[contains(.,'Task')]")));
         taskBtn.click();
     }
 
@@ -47,18 +52,26 @@ public class AssignTaskMenteePage {
     }
 
     public void setSubmitUrTaskBtn() {
+        WebDriverWait wait = new WebDriverWait(driver,10);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//div[@class='pb-9']/div[1]//label[@id='btn-submitTask']")));
         submitUrTaskBtn.click();
     }
 
     public void setPopUpSubmit() {
+        WebDriverWait wait = new WebDriverWait(driver,10);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//h3[@class='font-medium text-lg text-putih mb-3']")));
         popUpSubmit.isDisplayed();
     }
 
     public void setUploadTask(String file) {
+        WebDriverWait wait = new WebDriverWait(driver,10);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//input[@id='uploadfile-btn']")));
         uploadTask.sendKeys(pathFile+""+file+"");
     }
 
     public void setBtnSubmit() {
+        WebDriverWait wait = new WebDriverWait(driver,10);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@id='btn-submitTask']")));
         btnSubmit.click();
     }
 
@@ -70,6 +83,8 @@ public class AssignTaskMenteePage {
     }
 
     public void setBtnOKTask() {
+        WebDriverWait wait = new WebDriverWait(driver,10);
+        wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//button[@class='swal2-confirm swal2-styled']")));
         btnOKTask.click();
     }
 }

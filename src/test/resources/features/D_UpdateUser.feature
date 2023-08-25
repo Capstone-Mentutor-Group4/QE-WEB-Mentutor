@@ -1,7 +1,7 @@
 Feature: Update User Mentutor
   as and admin i want to update user
 
-  @UpdateUser
+  @TestRun @Admin @UpdateUser
   Scenario: Update User with valid data
     Given Admin already login
     Then User got the pop up message login successful
@@ -13,7 +13,7 @@ Feature: Update User Mentutor
     And Admin click submit update button
     Then Admin got the pop up Success Update
 
-  @UpdateUser
+  @TestRun @Admin @UpdateUser
   Scenario: Update User with invalid data
     Given Admin already login
     Then User got the pop up message login successful
@@ -26,7 +26,7 @@ Feature: Update User Mentutor
     Then Admin got the pop up Failed Update
 
 #  Bug, dapat update tanpa mengisi nama
-  @UpdateUser
+  @TestRun @Admin @UpdateUser
   Scenario: Update User with empty name
     Given Admin already login
     Then User got the pop up message login successful
@@ -39,7 +39,7 @@ Feature: Update User Mentutor
     Then Admin got the pop up Failed Update
 
 #    Bug dapat mengupdate saat email kosong
-  @UpdateUser
+  @TestRun @Admin @UpdateUser
   Scenario: Update User with empty email
     Given Admin already login
     Then User got the pop up message login successful

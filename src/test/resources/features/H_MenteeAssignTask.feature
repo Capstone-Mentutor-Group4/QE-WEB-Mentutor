@@ -1,7 +1,7 @@
 Feature: Assign Task Mentutor by Mentee
   as a user i want to assign task
 
-  @Assign
+  @TestRun @Assign
   Scenario: Assign Task with valid data
     Given Mentee already login
     Then Mentee direct to homementee page
@@ -12,7 +12,7 @@ Feature: Assign Task Mentutor by Mentee
     And Mentee click submit button
     Then Mentee got the pop Up task
 
-  @Assign
+  @TestRun @Assign
   Scenario: Assign Task with invalid extension data
     Given Mentee already login
     Then Mentee direct to homementee page
@@ -23,7 +23,7 @@ Feature: Assign Task Mentutor by Mentee
     And Mentee click submit button
     Then Mentee got the pop Up task
 
-  @Assign
+  @TestRun @Assign
   Scenario: Assign Task with empty data
     Given Mentee already login
     Then Mentee direct to homementee page
