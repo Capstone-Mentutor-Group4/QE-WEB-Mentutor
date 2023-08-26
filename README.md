@@ -111,7 +111,7 @@ To get a local copy up and running follow these simple example steps.
 
 1. Clone the repository
 ```bash
-$ git clone https://github.com/Capstone-Mentutor-Group4/QE-API-Mentutor.git
+$ git clone https://github.com/Capstone-Mentutor-Group4/QE-WEB-Mentutor.git
 ```
 2. Open  this Project Repository on Intellij IDE and Run this on the IDE terminal
 ```bash
