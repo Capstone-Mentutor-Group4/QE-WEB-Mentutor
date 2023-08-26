@@ -2,7 +2,7 @@
   <h1>Welcome to Mentutor</h1>
 
 <a href="">
-    <img src="./LogoMentutor.png" width="480" height="360">
+    <img src="./LogoMentutor.png" width="480" height="280">
   </a>
 
   <p align="center">
@@ -23,7 +23,7 @@
 
 ## 📓 Documentation
 #### 👀   [Test Run WEB](https://youtu.be/iaz8q6xAYts)
-#### 📝   [Test Automation Report](https://github.com/Capstone-Mentutor-Group4/QE-WEB-Mentutor.git)
+#### 📝   [Test Automation Report](https://drive.google.com/drive/folders/1oZYfWFdVxSvToY_mKirjFhSUmBmxF_9W?usp=sharing)
 
 
 ## 🛠 Tools
@@ -120,11 +120,11 @@ $ mvn clean verify
 
 ## 📱 Our teams
 
-[![LinkedIn](https://img.shields.io/badge/-Fahrul%20Rozi-white?style=for-the-badge&logo=linkedin&logoColor=blue)](https://www.linkedin.com/in/rolando-tigor-b02565173)
-[![GitHub](https://img.shields.io/badge/-FahrulRozi-white?style=for-the-badge&logo=github&logoColor=black)](https://github.com/tigorrr4/)
+[![LinkedIn](https://img.shields.io/badge/-Fahrul%20Rozi-white?style=for-the-badge&logo=linkedin&logoColor=blue)](https://www.linkedin.com/in/fahrulroziabdibahari/)
+[![GitHub](https://img.shields.io/badge/-FahrulRozi-white?style=for-the-badge&logo=github&logoColor=black)](https://github.com/FahrulRoziAbdi)
 
-[![LinkedIn](https://img.shields.io/badge/-Wahid%20Abdul%20Azis-white?style=for-the-badge&logo=linkedin&logoColor=blue)](https://www.linkedin.com/in/mkhairul-fahmi-rasyidin-0723411ba)
-[![GitHub](https://img.shields.io/badge/-WahidAbdulAzis-white?style=for-the-badge&logo=github&logoColor=black)](https://github.com/sultanjoss/)
+[![LinkedIn](https://img.shields.io/badge/-Wahid%20Abdul%20Azis-white?style=for-the-badge&logo=linkedin&logoColor=blue)](https://www.linkedin.com/in/wahid-azis-98954b243/)
+[![GitHub](https://img.shields.io/badge/-WahidAbdulAzis-white?style=for-the-badge&logo=github&logoColor=black)](https://github.com/WahidAzis)
 
 <h5>
 <p align="center">:copyright: 2023 | This Repository Built with :heart: from Group-4</p>
