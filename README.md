@@ -16,7 +16,7 @@
 
 ## 📑 About the Project
 ### Application Under Test | Mentutor
-<p align="justify">Welcome to our API Testing repository. Mentutor are present as a forum for teachers to monitor their students both from collection and by practicing with students through the provided forum.
+<p align="justify">Welcome to our WEB Testing repository. Mentutor are present as a forum for teachers to monitor their students both from collection and by practicing with students through the provided forum.
 
 ## 📑 API Testing- Mentutor
 <p align="justify">This project was created to complete a Capstone project in the Batch 11 Quality Assurance class at the Alterra Academy Immersive Program. At this project, we perform an API Automation Testing for 3 users feature or end points (Admin, Mentor, and Mentee).</p>
